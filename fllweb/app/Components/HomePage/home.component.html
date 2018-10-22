@@ -1,0 +1,87 @@
+<div class="main-content" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="content" *ngIf="isenglish">
+                            <h3>Welcome to ECCC website</h3>
+                            <p>Address：3615 164th Place SE, Bellevue, WA 98008, USA. Tel: 425-747-0889</p>
+                            <p>Latest Morning Message: {{morningmessage.title}} - {{morningmessage.speaker}}
+                                <a target="_blank" href="{{morningmessage.mp4file}}"><img class="fontsizebutton" src="images/play.png"/></a> 
+                                &nbsp;<a target="_blank" href="{{morningmessage.mp3file}}"><img class="fontsizebutton" src="images/playaudio.png"/></a></p>
+                            <p>Latest afternoon Message: {{afternoonmessage.title}} - {{afternoonmessage.speaker}}
+                                <a target="_blank" href="{{afternoonmessage.mp4file}}"><img class="fontsizebutton" src="images/play.png"/></a> 
+                                &nbsp;<a target="_blank" href="{{afternoonmessage.mp3file}}"><img class="fontsizebutton" src="images/playaudio.png"/></a></p>
+                        </div>
+                        <div class="content" *ngIf="issimplifychinese">
+                            <h3>欢迎来到东区基督教会</h3>
+                            <p>地址：3615 164th Place SE, Bellevue, WA 98008, USA. 电话: 425-747-0889</p>
+                            <p>最新信息：{{morningmessage.title}} - {{morningmessage.speaker}}
+                                <a target="_blank" href="{{morningmessage.mp4file}}"><img class="fontsizebutton" src="images/play.png"/></a> 
+                                &nbsp;<a target="_blank" href="{{morningmessage.mp3file}}"><img class="fontsizebutton" src="images/playaudio.png"/></a></p>
+                        </div>
+                        <div class="content" *ngIf="istraditionalchinese">
+                            <h3>歡迎來到東區基督教會</h3>
+                            <p>地址：3615 164th Place SE, Bellevue, WA 98008, USA. 電話: 425-747-0889</p>
+                            <p>最新信息：{{morningmessage.title}} - {{morningmessage.speaker}}
+                                <a target="_blank" href="{{morningmessage.mp4file}}"><img class="fontsizebutton" src="images/play.png"/></a> 
+                                &nbsp;<a target="_blank" href="{{morningmessage.mp3file}}"><img class="fontsizebutton" src="images/playaudio.png"/></a></p>     </div>
+                        <div class="content" >
+                                <imagegallery></imagegallery>
+                        </div>
+                        <div class="content" *ngIf="isenglish">
+                            <p class="center"><b><i>Daily Verse: {{verseItem.text}}  - {{verseItem.from}}</i></b></p>
+                            <div class="alert alert-info">
+                                <span><b>Our Faith</b></span>
+                            </div>
+                            <p>As the redeemed, saved by God's grace, we believe in, and hold fast to, the following:</p>
+                            <p>1.We believe in one God, eternally existing in three Persons: Father, Son and Holy Spirit; and these three are the same in substance, equal in power and glory.</p>
+                            <p>2.We believe in the Scriptures of the Old and the New Testaments as verbally and fully inspired by God and inerrant in the original writing, and that they are of supreme and final authority in faith and life.</p>
+                            <p>3.We believe that Jesus Christ was begotten by the Holy Spirit, born of the Virgin Mary, and is true God and true man.</p>
+                            <p>4.We believe that man was created in the image of God; that he sinned, and thereby incurred, not only physical death but also spiritual death which is separation from God; and that human beings are born with a sinful nature, and, in the case of those who reach moral responsibility, become sinners in thought, word and deed.</p>
+                            <p>5.We believe that the Lord Jesus Christ died for our sins; according to the Scriptures, as a representative and substitutionary sacrifice; and that all who believe in Him are justified on the ground of His shed blood.</p>
+                            <p>6.We believe in the resurrection of the crucified body of our Lord, in His ascension into Heaven, and in His present life there for us, as High Priest and Advocate.</p>
+                            <p>7.We believe in the deity and personality of the Holy Spirit, who convicts the sinner, regenerates, indwells, enlightens and guides the believers.</p>
+                            <p>8.We believe that all who receive by faith the Lord Jesus Christ are born again by the Holy Spirit, and thereby become children of God.</p>
+                            <p>9.We believe on “that blessed hope” the personal and pre-millennial and imminent return of our Lord and Savor, Jesus Christ.</p>
+                            <p>10.We believe in the bodily resurrection of the just and the unjust; the everlasting blessedness of the saved, and the everlasting punishment of the lost.</p>
+                        </div> 
+                        <div class="content" *ngIf="issimplifychinese">
+                            <p class="center"><b><i>每日金句: {{verseItem.text}}  - {{verseItem.from}}</i></b></p>
+                            <div class="alert alert-info">
+                                <span><b>我们的信仰</b></span>
+                            </div>
+                            <p>我们是蒙恩得救的人。我们坚持并且笃信</p>
+                            <p>1.我们笃信独一真神，父、子、圣灵三位一体，永生永存，本质相同，权能与荣耀相等。</p>
+                            <p>2.我们笃信旧约与新约之经文，其一字一句全部由神启示所写成的。原文绝无错误，乃我们信仰与生命最高、最终之权威。</p>
+                            <p>3.我们笃信耶稣是由圣灵感孕，藉马利亚童贞女身所诞生，是真神也是真人。</p>
+                            <p>4.我们笃信人是照神的形像被神所创造。因犯罪不单招致肉身死亡，亦招致灵命死亡，与神隔绝。人类生来有罪性，因此人届鉴别道德责任能力时，则在思想、言语、行为上显明为罪人。</p>
+                            <p>5.我们笃信主耶稣基督为我们的罪死，照圣经所言成为代表性和代替性的祭物。凡信他的都因他所流的宝血称义。</p>
+                            <p>6.我们笃信主耶稣基督被钉十字架之身体复活、升天，如今在天上为我们的大祭司和中保。</p>
+                            <p>7.我们笃信圣灵的神性和位格。圣灵使人知罪，给以重生，并居位於信徒心中，启化和引导。</p>
+                            <p>8.我们笃信凡用信心接受耶稣基督之人就为圣灵重生，成为神的儿女。</p>
+                            <p>9.我们笃信那“有福之盼望”就是救主耶稣基督在千禧年前随时再来。</p>
+                            <p>10.我们笃信义者及不义者的身体复活。得救者享永福，沉沦者受永刑</p>
+                        </div> 
+                        <div class="content" *ngIf="istraditionalchinese">
+                            <p class="center"><b><i>每日金句: {{verseItem.text}}  - {{verseItem.from}}</i></b></p>
+                            <div class="alert alert-info">
+                                <span><b>我們的信仰</b></span>
+                            </div>
+                            <p>我們是蒙恩得救的人。我們堅持並且篤信</p>
+                            <p>1.我們篤信獨一真神，父、子、聖靈三位一體，永生永存，本質相同，權能與榮耀相等。</p>
+                            <p>2.我們篤信舊約與新約之經文，其一字一句全部由神啟示所寫成的。原文絕無錯誤，乃我們信仰與生命最高、最終之權威。</p>
+                            <p>3.我們篤信耶穌是由聖靈感孕，藉馬利亞童貞女身所誕生，是真神也是真人。</p>
+                            <p>4.我們篤信人是照神的形像被神所創造。因犯罪不單招致肉身死亡，亦招致靈命死亡，與神隔絕。人類生來有罪性，因此人屆鑒別道德責任能力時，則在思想、言語、行為上顯明為罪人。</p>
+                            <p>5.我們篤信主耶穌基督為我們的罪死，照聖經所言成為代表性和代替性的祭物。凡信他的都因他所流的寶血稱義。</p>
+                            <p>6.我們篤信主耶穌基督被釘十字架之身體復活、升天，如今在天上為我們的大祭司和中保。</p>
+                            <p>7.我們篤信聖靈的神性和位格。聖靈使人知罪，給以重生，並居位於信徒心中，啟化和引導。</p>
+                            <p>8.我們篤信凡用信心接受耶穌基督之人就為聖靈重生，成為神的兒女。</p>
+                            <p>9.我們篤信那“有福之盼望”就是救主耶穌基督在千禧年前隨時再來。</p>
+                            <p>10.我們篤信義者及不義者的身體復活。得救者享永福，沉淪者受永刑。</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

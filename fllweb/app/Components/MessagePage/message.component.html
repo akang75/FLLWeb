@@ -1,0 +1,33 @@
+<div class="main-content" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="content">
+                            <div class="alert alert-info">
+                                <span><b>{{currentmessagetitle}}</b></span>
+                            </div>
+                            <div>
+                                <p>{{morningmessage.date}} {{morningmessage.title}} - {{morningmessage.speaker}}
+                                    &nbsp;<a target="_blank" href="{{morningmessage.mp4file}}"><img alt="watch online" src="images/play.png" class="fontsizebutton"/></a>
+                                    &nbsp;<a target="_blank" href="{{morningmessage.mp3file}}"><img alt="listen online" src="images/playaudio.png" class="fontsizebutton"/></a>
+                                </p>
+                            </div>
+                            <div *ngIf="isenglish">
+                                <p>{{afternoonmessage.date}} {{afternoonmessage.title}} - {{afternoonmessage.speaker}}
+                                    &nbsp;<a target="_blank" href="{{afternoonmessage.mp4file}}"><img alt="watch online" src="images/play.png" class="fontsizebutton"/></a>
+                                    &nbsp;<a target="_blank" href="{{afternoonmessage.mp3file}}"><img alt="listen online" src="images/playaudio.png" class="fontsizebutton"/></a>
+                                </p>
+                            </div>
+                            <p (click)="ToggleHistory()" class="cursor">
+                                <img alt="expand" src="images/{{iconfilename}}"  class="fontsizebutton"/>
+                                <span><b>{{currenthistorytitle}}</b></span>
+                            </p>
+                            <oldmessage *ngIf="showhistoryfile"></oldmessage>
+                            <specialtopic></specialtopic>
+                            <classes></classes>
+                        </div> 
+                    </div>
+                </div>
+        </div>
+</div>
