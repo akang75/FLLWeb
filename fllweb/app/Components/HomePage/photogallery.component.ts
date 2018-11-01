@@ -31,11 +31,11 @@ export class PhotoGalleryComponent implements OnInit
     ngOnInit()
     {
         this.index = 0;
-        this.images = [{url: "img1.png", visible: true}, 
+        this.images = [{url: "img1.jpg", visible: true}, 
                         {url: "img2.jpg", visible:false},
                         {url: "img3.jpg", visible:false},
-                        {url: "img4.png", visible:false},
-                        {url: "img5.png", visible:false}];
+                        {url: "img4.jpg", visible:false},
+                        {url: "img5.jpg", visible:false}];
         this.indicators = new Array(this.images.length).fill("unselected.jpg");
         this.indicators[0] = "selected.jpg";
         this.timer = global.setInterval(()=>{this.next()}, 2000);

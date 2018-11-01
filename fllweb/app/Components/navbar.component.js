@@ -10,27 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var globalvarible_1 = require("../Shared/globalvarible");
-var globalvarible_2 = require("../Shared/globalvarible");
 var language_service_1 = require("../Services/language.service");
 var NavbarComponent = /** @class */ (function () {
     function NavbarComponent(languageService) {
         this.languageService = languageService;
     }
     NavbarComponent.prototype.ngOnInit = function () {
-        this.languages = [{ language: globalvarible_1.Language.English,
-                hidden: false,
-                displaytext: "English" },
-            { language: globalvarible_1.Language.SimplifyChinese,
-                hidden: false,
-                displaytext: "简体中文" },
-            { language: globalvarible_1.Language.TranditionalChinese,
-                hidden: true,
-                displaytext: "繁體中文" }];
-    };
-    NavbarComponent.prototype.setLanguage = function (language) {
-        globalvarible_2.GlobalVariable.language = globalvarible_1.Language[language];
-        this.languageService.changeLanguage(language);
     };
     NavbarComponent = __decorate([
         core_1.Component({
@@ -43,9 +28,4 @@ var NavbarComponent = /** @class */ (function () {
     return NavbarComponent;
 }());
 exports.NavbarComponent = NavbarComponent;
-var LanguageTab = /** @class */ (function () {
-    function LanguageTab() {
-    }
-    return LanguageTab;
-}());
 //# sourceMappingURL=navbar.component.js.map

@@ -25,12 +25,10 @@ export class SideNavComponent{
     ngOnInit()
     {
         this.menuitems = [{title:'Home', routerLink:'Home', icon:"pe-7s-home"},
-                          {title:'Meeting',routerLink:'Meeting', icon:"pe-7s-date"},
-                          {title:'Church Message', routerLink:'ChurchMessage', icon:"pe-7s-pin"},
-                          {title:'Videos',routerLink:'Message', icon:"pe-7s-film"},
-                          {title:'Gospel',routerLink:'Gospel', icon:"pe-7s-speaker"},
-                          {title:'Fellowship',routerLink:'Fellowship', icon:"pe-7s-users"},
-                          {title:'About Us',routerLink:'About', icon:"pe-7s-info"}];
+                          {title:'Core Value', routerLink:'CoreValue', icon:"pe-7s-rocket"},
+                          {title:'Photos',routerLink:'Photos', icon:"pe-7s-photo"},
+                          {title:'Project',routerLink:'Project', icon:"pe-7s-plugin"},
+                          {title:'About',routerLink:'AboutTeam', icon:"pe-7s-users"}];
                                                        
         
     }
