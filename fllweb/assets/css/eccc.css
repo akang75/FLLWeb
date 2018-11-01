@@ -8,10 +8,16 @@
 
 .centered {
   position: absolute;
-  font-size: 50px;
   top: 50%;
   left: 50%;
+  height: 200px;
   transform: translate(-50%, -50%);
+}
+
+.welcometext{
+  font-size: 50px;
+  color:yellow;
+  font-family: fantasy;
 }
 
 li { cursor: pointer; }
