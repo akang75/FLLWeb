@@ -10,20 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var HomeComponent = /** @class */ (function () {
-    function HomeComponent() {
+var PhotoComponent = /** @class */ (function () {
+    function PhotoComponent() {
     }
-    HomeComponent.prototype.ngOnInit = function () {
+    PhotoComponent.prototype.ngOnInit = function () {
     };
-    HomeComponent = __decorate([
+    PhotoComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'home',
-            templateUrl: "home.component.html",
+            selector: 'photo',
+            templateUrl: "photo.component.html",
         }),
         __metadata("design:paramtypes", [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], PhotoComponent);
+    return PhotoComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.PhotoComponent = PhotoComponent;
+//# sourceMappingURL=photo.component.js.map

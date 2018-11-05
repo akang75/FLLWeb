@@ -10,10 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var language_service_1 = require("../Services/language.service");
 var NavbarComponent = /** @class */ (function () {
-    function NavbarComponent(languageService) {
-        this.languageService = languageService;
+    function NavbarComponent() {
     }
     NavbarComponent.prototype.ngOnInit = function () {
     };
@@ -23,7 +21,7 @@ var NavbarComponent = /** @class */ (function () {
             selector: 'navbar-cmp',
             templateUrl: 'navbar.component.html'
         }),
-        __metadata("design:paramtypes", [language_service_1.LanguageService])
+        __metadata("design:paramtypes", [])
     ], NavbarComponent);
     return NavbarComponent;
 }());

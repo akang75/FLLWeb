@@ -15,7 +15,7 @@
 }
 
 .welcometext{
-  font-size: 50px;
+  font-size: 40px;
   color:yellow;
   font-family: fantasy;
 }
@@ -63,3 +63,24 @@ li { cursor: pointer; }
   .letter{
     padding-left:2em
   }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+} 

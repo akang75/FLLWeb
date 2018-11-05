@@ -10,16 +10,18 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
-var language_service_1 = require("./Services/language.service");
 var http_1 = require("@angular/http");
-var jsonload_service_1 = require("./Services/jsonload.service");
 var home_component_1 = require("./Components/HomePage/home.component");
 var navbar_component_1 = require("./Components/navbar.component");
 var photogallery_component_1 = require("./Components/HomePage/photogallery.component");
 var sidenav_component_1 = require("./Components/sidenav.component");
+var photo_component_1 = require("./Components/PhotoPage/photo.component");
+var about_component_1 = require("./Components/AboutPage/about.component");
 var appRoutes = [
     { path: '', component: home_component_1.HomeComponent },
     { path: 'Home', component: home_component_1.HomeComponent },
+    { path: 'Photo', component: photo_component_1.PhotoComponent },
+    { path: 'About', component: about_component_1.AboutComponent },
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -29,12 +31,13 @@ var AppModule = /** @class */ (function () {
             imports: [platform_browser_1.BrowserModule, http_1.HttpModule, router_1.RouterModule.forRoot(appRoutes)],
             declarations: [app_component_1.AppComponent,
                 home_component_1.HomeComponent,
+                photo_component_1.PhotoComponent,
+                about_component_1.AboutComponent,
                 navbar_component_1.NavbarComponent,
                 sidenav_component_1.SideNavComponent,
                 photogallery_component_1.PhotoGalleryComponent,
             ],
             bootstrap: [app_component_1.AppComponent],
-            providers: [language_service_1.LanguageService, jsonload_service_1.JsonLoadService],
         })
     ], AppModule);
     return AppModule;

@@ -3,10 +3,10 @@ import {Component} from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    selector: 'home',
-    templateUrl: "home.component.html",
+    selector: 'about',
+    templateUrl: "about.component.html",
 })
-export class HomeComponent {
+export class AboutComponent {
 
     constructor()
     {
