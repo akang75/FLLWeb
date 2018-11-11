@@ -7,28 +7,20 @@ import {HomeComponent} from './Components/HomePage/home.component';
 import { NavbarComponent } from './Components/navbar.component';
 import { PhotoGalleryComponent } from './Components/HomePage/photogallery.component';
 import { SideNavComponent } from './Components/sidenav.component';
-import { PhotoComponent } from './Components/PhotoPage/photo.component';
-import { AboutComponent } from './Components/AboutPage/about.component';
-import {CoreValueComponent} from './Components/CoreValuePage/corevalue.component';
+
 
 const appRoutes: Routes = [ 
   { path: '', component: HomeComponent},
   { path: 'Home', component: HomeComponent},
-  { path: 'Photo', component: PhotoComponent},
-  { path: 'About', component: AboutComponent},
-  { path: 'CoreValue', component : CoreValueComponent},
 ];
 
 @NgModule({
   imports:      [ BrowserModule, HttpModule, RouterModule.forRoot(appRoutes)],
   declarations: [ AppComponent, 
                   HomeComponent, 
-                  PhotoComponent,
-                  AboutComponent,
                   NavbarComponent, 
                   SideNavComponent, 
                   PhotoGalleryComponent,
-                  CoreValueComponent,
                 ],
   bootstrap:    [ AppComponent ],  
   
