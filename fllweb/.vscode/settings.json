@@ -1,3 +1,5 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "appService.defaultWebAppToDeploy": "/subscriptions/7c1e16df-11f6-4bc7-9729-c36b03f97028/resourceGroups/ZigZagFllTeam/providers/Microsoft.Web/sites/ZigZagFll",
+    "appService.deploySubpath": ""
 }
