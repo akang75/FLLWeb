@@ -18,12 +18,14 @@ var sidenav_component_1 = require("./Components/sidenav.component");
 var photo_component_1 = require("./Components/PhotoPage/photo.component");
 var about_component_1 = require("./Components/AboutPage/about.component");
 var corevalue_component_1 = require("./Components/CoreValuePage/corevalue.component");
+var ourteam_component_1 = require("./Components/OurTeamPage/ourteam.component");
 var appRoutes = [
     { path: '', component: home_component_1.HomeComponent },
     { path: 'Home', component: home_component_1.HomeComponent },
     { path: 'Photo', component: photo_component_1.PhotoComponent },
     { path: 'About', component: about_component_1.AboutComponent },
     { path: 'CoreValue', component: corevalue_component_1.CoreValueComponent },
+    { path: 'OurTeam', component: ourteam_component_1.OurTeamComponent },
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -39,6 +41,7 @@ var AppModule = /** @class */ (function () {
                 sidenav_component_1.SideNavComponent,
                 photogallery_component_1.PhotoGalleryComponent,
                 corevalue_component_1.CoreValueComponent,
+                ourteam_component_1.OurTeamComponent,
             ],
             bootstrap: [app_component_1.AppComponent],
         })

@@ -10,6 +10,7 @@ import { SideNavComponent } from './Components/sidenav.component';
 import { PhotoComponent } from './Components/PhotoPage/photo.component';
 import { AboutComponent } from './Components/AboutPage/about.component';
 import {CoreValueComponent} from './Components/CoreValuePage/corevalue.component';
+import { OurTeamComponent } from './Components/OutTeamPage/ourteam.component';
 
 const appRoutes: Routes = [ 
   { path: '', component: HomeComponent},
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   { path: 'Photo', component: PhotoComponent},
   { path: 'About', component: AboutComponent},
   { path: 'CoreValue', component : CoreValueComponent},
+  { path: 'OurTeam', component : OurTeamComponent},
 ];
 
 @NgModule({
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
                   SideNavComponent, 
                   PhotoGalleryComponent,
                   CoreValueComponent,
+                  OurTeamComponent,
                 ],
   bootstrap:    [ AppComponent ],  
   
