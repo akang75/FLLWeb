@@ -14,6 +14,7 @@ var SideNavComponent = /** @class */ (function () {
         this.menuitems = [{ title: 'Home', routerLink: 'Home', icon: "pe-7s-home" },
             { title: 'Core Value', routerLink: 'CoreValue', icon: "pe-7s-rocket" },
             { title: 'Photos', routerLink: 'Photo', icon: "pe-7s-photo" },
+            { title: 'Project', routerLink: 'Project', icon: "pe-7s-plugin" },
             { title: 'Our Team', routerLink: 'OurTeam', icon: "pe-7s-users" },
             { title: 'Contact Us', routerLink: 'About', icon: "pe-7s-mail" }];
     };
