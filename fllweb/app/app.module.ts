@@ -11,6 +11,7 @@ import { PhotoComponent } from './Components/PhotoPage/photo.component';
 import { AboutComponent } from './Components/AboutPage/about.component';
 import {CoreValueComponent} from './Components/CoreValuePage/corevalue.component';
 import {ProjectComponent} from './Components/ProjectPage/Project.component';
+import { OurTeamComponent } from './Components/OurTeamPage/ourteam.component';
 
 const appRoutes: Routes = [ 
   { path: '', component: HomeComponent},
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   { path: 'About', component: AboutComponent},
   { path: 'Project', component: ProjectComponent},
   { path: 'CoreValue', component : CoreValueComponent},
+  { path: 'OurTeam', component : OurTeamComponent},
 ];
 
 @NgModule({
@@ -32,6 +34,7 @@ const appRoutes: Routes = [
                   PhotoGalleryComponent,
                   CoreValueComponent,
                   ProjectComponent,
+                  OurTeamComponent,
                 ],
   bootstrap:    [ AppComponent ],  
   
