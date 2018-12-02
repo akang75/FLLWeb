@@ -10,12 +10,14 @@ import { SideNavComponent } from './Components/sidenav.component';
 import { PhotoComponent } from './Components/PhotoPage/photo.component';
 import { AboutComponent } from './Components/AboutPage/about.component';
 import {CoreValueComponent} from './Components/CoreValuePage/corevalue.component';
+import {ProjectComponent} from './Components/ProjectPage/Project.component';
 
 const appRoutes: Routes = [ 
   { path: '', component: HomeComponent},
   { path: 'Home', component: HomeComponent},
   { path: 'Photo', component: PhotoComponent},
   { path: 'About', component: AboutComponent},
+  { path: 'Project', component: ProjectComponent},
   { path: 'CoreValue', component : CoreValueComponent},
 ];
 
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
                   SideNavComponent, 
                   PhotoGalleryComponent,
                   CoreValueComponent,
+                  ProjectComponent,
                 ],
   bootstrap:    [ AppComponent ],  
   

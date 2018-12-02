@@ -18,11 +18,13 @@ var sidenav_component_1 = require("./Components/sidenav.component");
 var photo_component_1 = require("./Components/PhotoPage/photo.component");
 var about_component_1 = require("./Components/AboutPage/about.component");
 var corevalue_component_1 = require("./Components/CoreValuePage/corevalue.component");
+var Project_component_1 = require("./Components/ProjectPage/Project.component");
 var appRoutes = [
     { path: '', component: home_component_1.HomeComponent },
     { path: 'Home', component: home_component_1.HomeComponent },
     { path: 'Photo', component: photo_component_1.PhotoComponent },
     { path: 'About', component: about_component_1.AboutComponent },
+    { path: 'Project', component: Project_component_1.ProjectComponent },
     { path: 'CoreValue', component: corevalue_component_1.CoreValueComponent },
 ];
 var AppModule = /** @class */ (function () {
@@ -39,6 +41,7 @@ var AppModule = /** @class */ (function () {
                 sidenav_component_1.SideNavComponent,
                 photogallery_component_1.PhotoGalleryComponent,
                 corevalue_component_1.CoreValueComponent,
+                Project_component_1.ProjectComponent,
             ],
             bootstrap: [app_component_1.AppComponent],
         })
