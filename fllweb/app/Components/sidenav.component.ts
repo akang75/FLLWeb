@@ -5,7 +5,7 @@ import {Subscription} from 'rxjs/Subscription';
     selector: 'sidemenu',
     template: `<div class="sidebar-wrapper">
             <div class="logo">
-                Welcome to ZigZag Team!
+                Welcome to CATSOP Team!
             </div>
            <ul class="nav responsive-nav">
                 <li routerLinkActive="active" *ngFor="let menuItem of menuitems">

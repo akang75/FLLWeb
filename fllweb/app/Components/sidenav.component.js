@@ -21,7 +21,7 @@ var SideNavComponent = /** @class */ (function () {
     SideNavComponent = __decorate([
         core_1.Component({
             selector: 'sidemenu',
-            template: "<div class=\"sidebar-wrapper\">\n            <div class=\"logo\">\n                Welcome to ZigZag Team!\n            </div>\n           <ul class=\"nav responsive-nav\">\n                <li routerLinkActive=\"active\" *ngFor=\"let menuItem of menuitems\">\n                    <a  [routerLink]=\"[menuItem.routerLink]\">\n                    <i class=\"{{menuItem.icon}}\"></i>\n                    <p>{{menuItem.title}}</p>\n                    </a>\n                </li>\n            </ul>\n            </div>\n    "
+            template: "<div class=\"sidebar-wrapper\">\n            <div class=\"logo\">\n                Welcome to CATSOP Team!\n            </div>\n           <ul class=\"nav responsive-nav\">\n                <li routerLinkActive=\"active\" *ngFor=\"let menuItem of menuitems\">\n                    <a  [routerLink]=\"[menuItem.routerLink]\">\n                    <i class=\"{{menuItem.icon}}\"></i>\n                    <p>{{menuItem.title}}</p>\n                    </a>\n                </li>\n            </ul>\n            </div>\n    "
         })
     ], SideNavComponent);
     return SideNavComponent;
